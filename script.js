@@ -25,6 +25,7 @@ $(document).ready(function() {
 	$("#encrypt").click(function() {
 		let val = encrypt($("#decrypted").val())
 		$("#encrypted").val(val);
+		console.log("Character Count: " + val.length.toString());
 		$("#charCount").text("Character Count: " + val.length.toString());
 	});
 
