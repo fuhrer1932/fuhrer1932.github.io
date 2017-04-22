@@ -23,7 +23,9 @@ function decrypt(str)
 
 $(document).ready(function() {
 	$("#encrypt").click(function() {
-		$("#encrypted").val(encrypt($("#decrypted").val()));
+		let val = encrypt($("#decrypted").val())
+		$("#encrypted").val(val);
+		$("#charCount").text(val.length);
 	});
 
 	$("#decrypt").click(function() {
