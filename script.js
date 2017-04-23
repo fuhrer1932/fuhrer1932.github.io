@@ -25,10 +25,11 @@ $(document).ready(function() {
 	$("#encrypt").click(function() {
 		let val = encrypt($("#decrypted").val())
 		$("#encrypted").val(val);
+		$("#charCount").text("Character Count: " + $(this).val().length);
 	});
 	
 	$("#encrypted").change(function() {
-		$("#charCount").text("Character Count: " + $(this).val());
+		$("#charCount").text("Character Count: " + $(this).val().length);
 	});
 
 	$("#decrypt").click(function() {
