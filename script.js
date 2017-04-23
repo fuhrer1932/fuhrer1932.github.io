@@ -25,7 +25,7 @@ $(document).ready(function() {
 	$("#encrypt").click(function() {
 		let val = encrypt($("#decrypted").val())
 		$("#encrypted").val(val);
-		$("#charCount").text("Character Count: " + $(this).val().length);
+		$("#charCount").text("Character Count: " + $("#encrypted").val().length);
 	});
 	
 	$("#encrypted").change(function() {
